@@ -94,7 +94,3 @@ else:
     for i in processes:
         i.wait()
 
-
-def runClient(_id, common, _input, mirror, _bytes, log_file):
-    os.system("./{} -n {} -c {} -i {} -m {} -b {} -l {}".format(
-        executable, _id, common, _input, mirror, _bytes, log_file))
